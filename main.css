@@ -3,11 +3,6 @@ body {
 }
 
 *, *:before, *:after {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -107,7 +102,6 @@ html, body {
 	text-decoration: none;
 	border: 1px solid #000;
 	outline: none;
-	-webkit-appearance: none;
 	font-size: 0.9em;
 	height: 3.5em;
 	padding: 0 2.5em;
@@ -139,15 +133,6 @@ html, body {
 .button_holder {
 	height: 6em;
 }
-
-
-
-
-
-
-
-
-
 
 .mobile {
 	display: none;
@@ -233,8 +218,6 @@ html, body {
 		height: 5em;
 	}
 }
-
-
 
 .vcenter {
 	top: 50%;
