@@ -1,0 +1,135 @@
+body {
+	/* overflow: hidden; */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+	width: 100% !important;
+	min-width: 0 !important;
+}
+
+.wrapper {
+	width: 100%;
+	/* max-width: 800px; */
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 25px;
+}
+
+.boxes {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0em;
+	overflow: visible;
+}
+
+.box {
+	min-height: 400px;
+	width: 280px;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 15px;
+	background: #fff;
+}
+
+.two.box {
+	/* background: rgb(245, 245, 245); */
+}
+
+.name {
+	color: #aaa;
+	margin: 0.35em 0;
+	/* line-height: 1.3em; */
+	font-weight: 600;
+	font-size: 1.35em;
+	/* letter-spacing: 4px; */
+	text-align: center;
+}
+
+.two .name {
+	color: #BB9A85;
+}
+
+.price {
+	color: #000;
+	font-weight: 600;
+	font-size: 1em;
+	/* letter-spacing: 4px; */
+	text-align: center;
+}
+
+.pic  {
+	display: block;
+	width: 100%;
+	height: 210px;
+}
+
+.reasons {
+	color: #555;
+	text-align: left;
+	margin: 2em auto;
+	font-size: 1em;
+	width: 75%;
+	height: 4.5em;
+}
+
+.reason {
+	margin: 0.7em auto;
+	padding-left: 1.7em;
+}
+
+.reason::before {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+	background: url('img/check.png') no-repeat center;
+	background-size: contain;
+	content: ' ';
+	margin: 0 0.5em 0 -1.5em;
+	opacity: 0.8;
+}
+
+.button input {
+	text-decoration: none;
+	border: 1px solid #000;
+	outline: none;
+	font-size: 0.9em;
+	height: 3.5em;
+	padding: 0 2.5em;
+	border-radius: 2em;
+	cursor: pointer;
+	font-weight: 600;
+	border-color: #BB9A85;
+	transition: background 0.25s, color 0.25s;
+	background: #fff;
+	color: #555;
+}
+
+.box:hover .button input,
+.box:active .button input,
+.box:focus .button input {
+	transition: background 0.25s 0.25s, color 0.25s 0.25s;
+	background: #BB9A85;
+	color: #fff;
+}
+
+.button {
+	position: absolute;
+	display: inline-block;
+	bottom: 2em;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.button_holder {
+	height: 6em;
+}
